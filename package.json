@@ -1,0 +1,25 @@
+{
+  "name": "career-guidance",
+  "version": "1.0.0",
+  "description": "a vue.js career guidance system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kompanymwega/career-guidance.git"
+  },
+  "keywords": [
+    "career",
+    "guidance",
+    "project"
+  ],
+  "author": "Gideon Collins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kompanymwega/career-guidance/issues"
+  },
+  "homepage": "https://github.com/kompanymwega/career-guidance#readme"
+}
+
