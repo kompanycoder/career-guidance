@@ -12,7 +12,7 @@ app.use(cors())
 
 require('./src/passport')
 
-require('./src/routes')(app)
+require('../src/routes')(app)
 
 sequelize.sync({force: false})
   .then(() => {

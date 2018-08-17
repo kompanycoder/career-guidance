@@ -1,5 +1,4 @@
 <template>
-<div class="container">
     <v-container fluid>
         <v-carousel>
             <v-carousel-item
@@ -9,7 +8,6 @@
             ></v-carousel-item>
         </v-carousel>
     </v-container>
-</div>
 
 </template>
 
