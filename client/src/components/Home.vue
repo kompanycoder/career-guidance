@@ -17,16 +17,16 @@
       return {
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+            src: require(`@/assets/career.jpg`)
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+            src: require(`@/assets/Career-Guidance-Dublin.jpg`)
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+            src: require(`@/assets/success-2697951_960_720.jpg`)
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+            src: require(`@/assets/consulting-2045471_960_720.jpg`)
           }
         ]
       }

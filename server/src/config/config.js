@@ -5,7 +5,6 @@ module.exports = {
       user: process.env.DB_USER || 'career',
       password: process.env.DB_PASS || 'career',
       options: {
-        operatorsAliases: false,
         host: process.env.HOST || 'localhost'
       }
     },

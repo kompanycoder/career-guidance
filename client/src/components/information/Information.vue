@@ -218,7 +218,7 @@ This is very important in formulating strategies for making marketing and promot
 export default {
   data () {
     return {
-      title: 'FEATURED CAREERS'
+      title: 'FEATURED CAREERS/ JOBS'
     }
   }
 }
