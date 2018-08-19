@@ -1,5 +1,8 @@
 <template>
-  <v-container>
+  <v-container grid-list-xl>
+    <div class="container">
+      <student-panel></student-panel>
+    </div> <br>
     <h3 class="text-center">{{ title }}</h3>
     <v-layout row wrap>
       <v-flex xs12 lg10 offset-lg1>
@@ -212,14 +215,20 @@ This is very important in formulating strategies for making marketing and promot
         </v-expansion-panel>
       </v-flex>
     </v-layout>
+    <v-spacer></v-spacer>
+    
   </v-container>
 </template>
 <script>
+import studentPanel from '@/components/information/student'
 export default {
   data () {
     return {
-      title: 'FEATURED CAREERS/ JOBS'
+      title: 'FEATURED CAREERS / JOBS'
     }
+  },
+  components: {
+    studentPanel
   }
 }
 </script>
