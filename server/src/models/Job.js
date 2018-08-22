@@ -9,5 +9,5 @@ module.exports = (sequelize, DataTypes) => {
   Job.associate = function (models) {
   }
 
-  return Job
+  return Job;
 }
