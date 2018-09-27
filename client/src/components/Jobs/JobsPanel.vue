@@ -1,20 +1,7 @@
 <template>
-  <panel title="Jobs">
-    <v-btn
-      slot="action"
-      :to="{
-        name: 'jobs-create'
-      }"
-      class="green accent-2"
-      light
-      medium
-      absolute
-      right
-      middle
-      fab>
-      <v-icon>add</v-icon>
-    </v-btn>
-
+  <div class="container">
+    <panel title="Jobs">
+    
     <div 
       v-for="job in jobs"
       class="job"
@@ -27,9 +14,6 @@
           </div>
           <div class="job-description">
             {{job.description}}
-          </div>
-          <div class="job-content">
-            {{job.content}}
           </div>
 
           <v-btn
@@ -47,6 +31,9 @@
       </v-layout>
     </div>
   </panel>
+  
+  
+  </div>
 </template>
 
 <script>
@@ -55,7 +42,7 @@ import JobsService from '@/services/JobsService'
 export default {
   data () {
     return {
-      jobs: null
+      jobs: {}
     }
   },
   watch: {

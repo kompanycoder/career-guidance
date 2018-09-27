@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-layout>
-      <v-flex xs6>
+      <v-flex xs12>
         <Job-metadata :job="job" />
       </v-flex>
 
@@ -13,7 +13,7 @@
       </v-flex>
 
       <v-flex xs6 class="ml-2">
-        <Company :job="job" />
+       
       </v-flex>
     </v-layout>
   </div>
@@ -22,7 +22,7 @@
 <script>
 import {mapState} from 'vuex'
 import Content from './content'
-import Company from './company'
+
 import JobMetadata from './JobMetadata'
 
 import JobsService from '@/services/JobsService'
@@ -53,8 +53,7 @@ export default {
   },
   components: {
     JobMetadata,
-    Content,
-    Company
+    Content
   }
 }
 </script>

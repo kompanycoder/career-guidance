@@ -31,8 +31,19 @@
         Information services
       </v-btn>
     </v-toolbar-items>
-
     <v-spacer></v-spacer>
+
+    <v-toolbar-items>
+      <v-btn 
+        flat 
+        dark
+        :to="{
+          name: 'more'
+        }">
+        More
+      </v-btn>
+    </v-toolbar-items>
+    
 
     <v-toolbar-items>
       <v-btn 

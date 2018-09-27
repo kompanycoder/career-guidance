@@ -8,6 +8,9 @@ import CreateJob from '@/components/CreateJob'
 import EditJob from '@/components/EditJob'
 import ViewJob from '@/components/ViewJob/Index'
 import Information from '@/components/information/Information'
+import More from '@/components/more'
+import Company from '@/components/company/company'
+import loginCompany from '@/components/company/loginCompany'
 
 Vue.use(Router)
 
@@ -22,6 +25,21 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: Register
+    },
+    {
+      path: '/more',
+      name: 'more',
+      component: More
+    },
+    {
+      path: '/loginCompany',
+      name: 'loginCompany',
+      component: loginCompany
+    },
+    {
+      path: '/company',
+      name: 'company',
+      component: Company
     },
     {
       path: '/login',

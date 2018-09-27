@@ -79,6 +79,7 @@ export default {
         this.error = 'Please fill in all the required fields.'
         return
       }
+      await JobsService.put(jobId)
 
       const jobId = this.$store.state.route.params.jobId
       try {

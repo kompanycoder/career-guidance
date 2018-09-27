@@ -55,6 +55,7 @@
 
 <script>
 import JobsService from '@/services/JobsService'
+import Panel from '@/components/globals/Panel.vue'
 
 export default {
   data () {
@@ -68,6 +69,9 @@ export default {
       error: null,
       required: (value) => !!value || 'Required.'
     }
+  },
+  components: {
+    Panel
   },
   methods: {
     async create () {

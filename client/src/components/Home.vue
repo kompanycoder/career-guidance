@@ -1,5 +1,6 @@
 <template>
     <v-container fluid>
+      <h4 class="text">Welcome to the Online Career Guidance System</h4>
         <v-carousel>
             <v-carousel-item
             v-for="(item,i) in items"
@@ -35,4 +36,7 @@
 </script>
 
 <style scoped>
+h4{
+  color: green;
+}
 </style>

@@ -63,7 +63,7 @@ module.exports = {
       })
     }
   },
-  async remove (req, res) {
+  async delete (req, res) {
     try {
       const userId = req.user.id
       const {bookmarkId} = req.params

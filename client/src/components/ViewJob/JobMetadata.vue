@@ -5,13 +5,11 @@
         <div class="job-title">
           {{job.title}}
         </div>
-        <div class="job-artist">
-          {{job.artist}}
+        <div class="job-description">
+          {{job.description}}
         </div>
-        <div class="job-genre">
-          {{job.genre}}
-        </div>
-
+      </v-flex>
+      <v-flex xs6>
         <v-btn
           dark
           class="green"
@@ -43,16 +41,12 @@
         </v-btn>
       </v-flex>
 
-      <v-flex xs6>
-        <img class="album-image" :src="job.albumImageUrl" />
-        <br>
-        {{job.album}}
-      </v-flex>
     </v-layout>
   </panel>
 </template>
 
 <script>
+import Panel from '@/components/globals/Panel.vue'
 import {mapState} from 'vuex'
 import BookmarksService from '@/services/BookmarksService'
 
@@ -60,6 +54,9 @@ export default {
   props: [
     'job'
   ],
+  components: {
+    Panel
+  },
   data () {
     return {
       bookmark: null
@@ -114,7 +111,7 @@ export default {
 <style scoped>
 .job {
   padding: 20px;
-  height: 330px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -122,16 +119,11 @@ export default {
   font-size: 30px;
 }
 
-.job-artist {
+.job-description {
   font-size: 24px;
 }
 
-.job-genre {
+.job-content{
   font-size: 18px;
-}
-
-.album-image {
-  width: 70%;
-  margin: 0 auto;
 }
 </style>
