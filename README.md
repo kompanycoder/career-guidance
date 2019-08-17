@@ -1,4 +1,7 @@
 # Career guidance
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/kompanycoder/career-guidance.svg)](https://greenkeeper.io/)
+
 A Vue.js / Express.js web application for careers
 
 # Setup
