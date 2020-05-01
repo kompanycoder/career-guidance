@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/app.js",
-    "lint": "eslint"
+    "lint": "eslint",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "Gideon Collins",
@@ -30,12 +32,14 @@
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.0",
     "sequelize": "^4.8.0",
-    "sqlite3": "^4.0.2"
+    "sqlite3": "^4.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",
     "@types/express": "^4.16.0",
     "@types/formidable": "^1.0.31",
     "typescript": "^3.0.3"
-  }
+  },
+  "snyk": true
 }
